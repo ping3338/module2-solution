@@ -1,0 +1,105 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    padding: 20px;
+}
+
+.section {
+    position: relative;
+    border: 1px solid black;
+    padding: 40px 20px 20px 20px;
+    background-color: #f0f0f0; 
+    margin-bottom: 20px;
+    float: left;
+}
+
+.section-title1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #ed7777; 
+    padding: 5px 10px;
+    border: 1px solid black;
+    font-size: 1.25em;
+}
+.section-title2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #dc0a0a; 
+    padding: 5px 10px;
+    border: 1px solid black;
+    font-size: 1.25em;
+}
+.section-title3 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #fbb957; 
+    padding: 5px 10px;
+    border: 1px solid black;
+    font-size: 1.25em;
+}
+
+
+
+
+/* for pc */
+@media (min-width: 992px) {
+    .section {
+        width: 33.33%;
+        margin-right: 1%;
+    }
+    .section:nth-child(3n) {
+        margin-right: 0;
+    }
+}
+
+/* ipad */
+@media (min-width: 768px) and (max-width: 991px) {
+    .section {
+        width: 48%;
+        margin-right: 4%;
+    }
+    .section:nth-child(2n) {
+        margin-right: 0;
+    }
+    .section:nth-child(3) {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+/* gsm */
+@media (max-width: 767px) {
+    .section {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+/* other */
+header {
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+    font-size: 1.75em; /* 頭標題比正文大75% */
+}
+
+.section p {
+    font-size: 1em; /* 正文文本大小 */
+}
